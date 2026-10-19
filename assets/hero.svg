@@ -1,0 +1,153 @@
+<svg viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Universal Coder console — router mark, live readouts, domain rail, and three live domain panels">
+  <defs>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#7c5cff" stroke-width="1" opacity="0.06"/>
+    </pattern>
+    <filter id="glow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="panelFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101728"/>
+      <stop offset="100%" stop-color="#0a0f1e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="420" fill="#060810"/>
+  <rect width="1200" height="420" fill="url(#grid)"/>
+
+  <!-- ===== header ===== -->
+  <g>
+    <rect x="0" y="0" width="1200" height="64" fill="#080c18"/>
+    <line x1="0" y1="64" x2="1200" y2="64" stroke="#22d3ee" stroke-opacity="0.22"/>
+
+    <g transform="translate(30,32)">
+      <circle r="17" fill="#0c1223" stroke="#22d3ee" stroke-opacity="0.5"/>
+      <circle r="9" fill="none" stroke="#7c5cff" stroke-width="1.5"/>
+      <circle r="2.6" fill="#e9ecf8"/>
+    </g>
+    <text x="62" y="27" font-family="Segoe UI, Inter, sans-serif" font-size="17" font-weight="800" letter-spacing="1.5" fill="#e9ecf8">UNIVERSAL CODER</text>
+    <text x="62" y="43" font-family="Consolas, 'JetBrains Mono', monospace" font-size="9.5" letter-spacing="2.4" fill="#586080">CLAUDE SKILL &#183; ROUTER &#183; OUTPUT-LOCKED</text>
+
+    <g font-family="Consolas, 'JetBrains Mono', monospace" font-size="10.5" letter-spacing="2" fill="#586080">
+      <text x="560" y="37">11 DOMAINS LOADED ON DEMAND</text>
+    </g>
+
+    <g transform="translate(960,24)">
+      <rect width="4" height="16" fill="#7c5cff"/>
+      <text x="12" y="13" font-family="Consolas, 'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="2" fill="#c7cce3">A MONOLISM PROJECT</text>
+    </g>
+
+    <g transform="translate(1100,32)">
+      <circle cx="0" cy="0" r="4.5" fill="#22d3ee" opacity="0.7"/>
+      <circle cx="18" cy="0" r="4.5" fill="#7c5cff" opacity="0.7"/>
+      <circle cx="36" cy="0" r="4.5" fill="#ff4d6d" opacity="0.7"/>
+    </g>
+    <g transform="translate(1160,32)">
+      <circle r="9" fill="none" stroke="#22d3ee" stroke-opacity="0.35" stroke-width="5"/>
+      <circle r="4.5" fill="#22d3ee" filter="url(#glow)"/>
+    </g>
+  </g>
+
+  <!-- ===== live-readout core strip ===== -->
+  <g>
+    <rect x="0" y="64" width="1200" height="40" fill="#0a0f1e"/>
+    <line x1="0" y1="104" x2="1200" y2="104" stroke="#22d3ee" stroke-opacity="0.18"/>
+    <text x="20" y="90" font-family="Consolas, 'JetBrains Mono', monospace" font-size="10" letter-spacing="3" fill="#22d3ee" opacity="0.14">4A 7E 9F 12 BB 03 C4 5D 88 2E F1 90 33 AC 6B D7 0C 55 E2 A9 71 3F 9D C8 2B 64 F0 17 8A D3 5E 91</text>
+
+    <g font-family="Consolas, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1">
+      <text x="24" y="90" fill="#586080">DOMAINS</text><text x="100" y="90" fill="#22d3ee" font-weight="700">11</text>
+      <text x="300" y="90" fill="#586080">PLACEHOLDERS</text><text x="414" y="90" fill="#ffb84d" font-weight="700">0</text>
+      <text x="580" y="90" fill="#586080">MODULES</text><text x="660" y="90" fill="#7c5cff" font-weight="700">11</text>
+      <text x="860" y="90" fill="#586080">COVERAGE</text><text x="950" y="90" fill="#ff4d6d" font-weight="700">100%</text>
+    </g>
+  </g>
+
+  <!-- ===== nav rail ===== -->
+  <g>
+    <line x1="230" y1="104" x2="230" y2="420" stroke="#22d3ee" stroke-opacity="0.18"/>
+    <text x="20" y="128" font-family="Consolas, 'JetBrains Mono', monospace" font-size="9.5" letter-spacing="3" fill="#586080">DOMAIN RAIL</text>
+
+    <g font-family="Consolas, 'JetBrains Mono', monospace" font-size="10.5" letter-spacing="1.6">
+      <g transform="translate(14,142)"><rect width="202" height="23" fill="#0c1223"/><rect width="2" height="23" fill="#586080"/><text x="12" y="16" fill="#98a0bd">OUTPUT</text></g>
+      <g transform="translate(14,168)"><rect width="202" height="23" fill="#0c1223"/><rect width="2" height="23" fill="#586080"/><text x="12" y="16" fill="#98a0bd">DESIGN</text></g>
+      <g transform="translate(14,194)"><rect width="202" height="23" fill="rgba(34,211,238,0.08)"/><rect width="2" height="23" fill="#22d3ee"/><text x="12" y="16" fill="#e9ecf8">GEOSPATIAL</text></g>
+      <g transform="translate(14,220)"><rect width="202" height="23" fill="#0c1223"/><rect width="2" height="23" fill="#586080"/><text x="12" y="16" fill="#98a0bd">DIMENSIONAL</text></g>
+      <g transform="translate(14,246)"><rect width="202" height="23" fill="#0c1223"/><rect width="2" height="23" fill="#586080"/><text x="12" y="16" fill="#98a0bd">GENOMICS</text></g>
+      <g transform="translate(14,272)"><rect width="202" height="23" fill="#0c1223"/><rect width="2" height="23" fill="#586080"/><text x="12" y="16" fill="#98a0bd">FUZZ / MUTATE</text></g>
+      <g transform="translate(14,298)"><rect width="202" height="23" fill="rgba(255,184,77,0.08)"/><rect width="2" height="23" fill="#ffb84d"/><text x="12" y="16" fill="#e9ecf8">GRAPH NEURAL NET</text></g>
+      <g transform="translate(14,324)"><rect width="202" height="23" fill="#0c1223"/><rect width="2" height="23" fill="#586080"/><text x="12" y="16" fill="#98a0bd">BIDS / NEURO</text></g>
+      <g transform="translate(14,350)"><rect width="202" height="23" fill="#0c1223"/><rect width="2" height="23" fill="#586080"/><text x="12" y="16" fill="#98a0bd">NETWORK ANALYSIS</text></g>
+      <g transform="translate(14,376)"><rect width="202" height="23" fill="rgba(255,77,109,0.08)"/><rect width="2" height="23" fill="#ff4d6d"/><text x="12" y="16" fill="#e9ecf8">REVERSE ENG.</text></g>
+      <g transform="translate(14,402)"><rect width="202" height="23" fill="#0c1223"/><rect width="2" height="23" fill="#586080"/><text x="12" y="16" fill="#98a0bd">VISUALIZATION</text></g>
+    </g>
+  </g>
+
+  <!-- ===== live domain panels ===== -->
+  <g font-family="Consolas, 'JetBrains Mono', monospace">
+    <!-- Panel 1: GEOSPATIAL -->
+    <g transform="translate(250,124)">
+      <rect width="296" height="262" rx="6" fill="url(#panelFill)" stroke="#22d3ee" stroke-opacity="0.22"/>
+      <circle cx="18" cy="20" r="4" fill="#22d3ee"/>
+      <text x="30" y="24" font-size="11" letter-spacing="2" fill="#e9ecf8" font-weight="700">GEOSPATIAL</text>
+      <line x1="0" y1="36" x2="296" y2="36" stroke="#22d3ee" stroke-opacity="0.14"/>
+
+      <text x="18" y="60" font-size="10" fill="#586080">CRS CHECK</text><text x="270" y="60" font-size="10" fill="#22d3ee" text-anchor="end" font-weight="700">PASS</text>
+      <rect x="18" y="68" width="260" height="4" rx="2" fill="#1a2238"/><rect x="18" y="68" width="260" height="4" rx="2" fill="#22d3ee"/>
+
+      <text x="18" y="98" font-size="10" fill="#586080">RESOLUTION</text><text x="270" y="98" font-size="10" fill="#e9ecf8" text-anchor="end" font-weight="700">10m/px</text>
+      <rect x="18" y="106" width="260" height="4" rx="2" fill="#1a2238"/><rect x="18" y="106" width="182" height="4" rx="2" fill="#22d3ee"/>
+
+      <rect x="18" y="130" width="260" height="24" rx="4" fill="#22d3ee" fill-opacity="0.08" stroke="#22d3ee" stroke-opacity="0.3"/>
+      <text x="30" y="146" font-size="10" fill="#8ff0ff">&#10003; REPROJECTED TO SHARED CRS</text>
+
+      <text x="18" y="186" font-size="9.5" fill="#98a0bd">&#10003; no degree/meter mismatch</text>
+      <text x="18" y="206" font-size="9.5" fill="#98a0bd">&#10003; nodata pixels masked</text>
+      <text x="18" y="226" font-size="9.5" fill="#98a0bd">&#10003; spatial holdout, no leakage</text>
+    </g>
+
+    <!-- Panel 2: GRAPH NEURAL NET -->
+    <g transform="translate(566,124)">
+      <rect width="296" height="262" rx="6" fill="url(#panelFill)" stroke="#ffb84d" stroke-opacity="0.22"/>
+      <circle cx="18" cy="20" r="4" fill="#ffb84d"/>
+      <text x="30" y="24" font-size="11" letter-spacing="2" fill="#e9ecf8" font-weight="700">GRAPH NEURAL NET</text>
+      <line x1="0" y1="36" x2="296" y2="36" stroke="#ffb84d" stroke-opacity="0.14"/>
+
+      <text x="18" y="60" font-size="10" fill="#586080">MP LAYERS</text><text x="270" y="60" font-size="10" fill="#e9ecf8" text-anchor="end" font-weight="700">3</text>
+      <rect x="18" y="68" width="260" height="4" rx="2" fill="#1a2238"/><rect x="18" y="68" width="104" height="4" rx="2" fill="#ffb84d"/>
+
+      <text x="18" y="98" font-size="10" fill="#586080">SPLIT MODE</text><text x="270" y="98" font-size="10" fill="#ffb84d" text-anchor="end" font-weight="700">INDUCTIVE</text>
+      <rect x="18" y="106" width="260" height="4" rx="2" fill="#1a2238"/><rect x="18" y="106" width="260" height="4" rx="2" fill="#ffb84d"/>
+
+      <rect x="18" y="130" width="260" height="24" rx="4" fill="#ffb84d" fill-opacity="0.08" stroke="#ffb84d" stroke-opacity="0.3"/>
+      <text x="30" y="146" font-size="10" fill="#ffd79a">&#10003; NO TRAIN/TEST LEAKAGE</text>
+
+      <text x="18" y="186" font-size="9.5" fill="#98a0bd">&#10003; features normalized pre-propagation</text>
+      <text x="18" y="206" font-size="9.5" fill="#98a0bd">&#10003; per-class F1, not raw accuracy</text>
+      <text x="18" y="226" font-size="9.5" fill="#98a0bd">&#10003; edges made bidirectional where symmetric</text>
+    </g>
+
+    <!-- Panel 3: REVERSE ENGINEERING -->
+    <g transform="translate(882,124)">
+      <rect width="296" height="262" rx="6" fill="url(#panelFill)" stroke="#ff4d6d" stroke-opacity="0.22"/>
+      <circle cx="18" cy="20" r="4" fill="#ff4d6d"/>
+      <text x="30" y="24" font-size="11" letter-spacing="2" fill="#e9ecf8" font-weight="700">REVERSE ENGINEERING</text>
+      <line x1="0" y1="36" x2="296" y2="36" stroke="#ff4d6d" stroke-opacity="0.14"/>
+
+      <text x="18" y="60" font-size="10" fill="#586080">STATIC PASS</text><text x="270" y="60" font-size="10" fill="#ff4d6d" text-anchor="end" font-weight="700">DONE</text>
+      <rect x="18" y="68" width="260" height="4" rx="2" fill="#1a2238"/><rect x="18" y="68" width="260" height="4" rx="2" fill="#ff4d6d"/>
+
+      <text x="18" y="98" font-size="10" fill="#586080">DYNAMIC PASS</text><text x="270" y="98" font-size="10" fill="#e9ecf8" text-anchor="end" font-weight="700">CONFIRMING</text>
+      <rect x="18" y="106" width="260" height="4" rx="2" fill="#1a2238"/><rect x="18" y="106" width="156" height="4" rx="2" fill="#ff4d6d"/>
+
+      <rect x="18" y="130" width="260" height="24" rx="4" fill="#ff4d6d" fill-opacity="0.08" stroke="#ff4d6d" stroke-opacity="0.3"/>
+      <text x="30" y="146" font-size="10" fill="#ffb3c0">&#10003; EVIDENCE LOGGED PER FINDING</text>
+
+      <text x="18" y="186" font-size="9.5" fill="#98a0bd">&#10003; scope confirmed authorized</text>
+      <text x="18" y="206" font-size="9.5" fill="#98a0bd">&#10003; static hypothesis vs. runtime truth</text>
+      <text x="18" y="226" font-size="9.5" fill="#98a0bd">&#10003; no third-party targets in scope</text>
+    </g>
+  </g>
+
+  <rect x="0.5" y="0.5" width="1199" height="419" fill="none" stroke="#7c5cff" stroke-opacity="0.15"/>
+</svg>
